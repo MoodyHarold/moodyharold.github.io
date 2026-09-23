@@ -910,8 +910,42 @@ body {
   transform: scale(1.25) rotate(-6deg);
 }
 
-/* Shine sweep on hover */
-.project-image::after {
+/* Real-screenshot variant */
+.project-image.has-screenshot {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/* Zoom the screenshot slightly on card hover */
+.project-card:hover .project-image.has-screenshot {
+  background-size: 108%;
+}
+
+/* Small icon badge overlaid on the screenshot */
+.shot-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: transform 0.3s var(--ease-spring);
+}
+
+.project-card:hover .shot-badge {
+  transform: scale(1.12) rotate(-6deg);
+}
+
+/* Shine sweep only applies to non-screenshot images */
+.project-image:not(.has-screenshot)::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -921,7 +955,7 @@ body {
   pointer-events: none;
 }
 
-.project-card:hover .project-image::after {
+.project-card:hover .project-image:not(.has-screenshot)::after {
   transform: translateX(100%);
 }
 
