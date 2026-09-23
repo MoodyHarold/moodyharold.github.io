@@ -3,6 +3,11 @@ Thumbs.db
 .DS_Store
 desktop.ini
 
-# Local tooling
+# Editors / tooling
+.vscode/
+.idea/
 .freebuff/
 server.log
+
+# Dependencies (none used, but guard anyway)
+node_modules/
