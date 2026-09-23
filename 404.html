@@ -118,9 +118,9 @@
         s.style.animationDelay = Math.random() * 5 + 's';
         document.body.appendChild(s);
       }
-      // Works both at site root and in subpath previews
-      document.querySelector('.btn').href =
-        location.href.replace(/[^/]*$/, '').replace(/\/[^/]*\/$/, '/') === location.origin + '/' ? '/' : '../index.html';
+      // GitHub Pages serves 404.html at the missing path's URL,
+      // so an absolute project-root link is the only reliable target.
+      document.querySelector('.btn').href = '/my-portifolio-website/';
     })();
   </script>
 </body>
