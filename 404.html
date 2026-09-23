@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Lost in Space | Moody Harold</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      background: #0a0a0f;
+      color: #f0f0f5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* starfield */
+    .star {
+      position: absolute;
+      background: #fff;
+      border-radius: 50%;
+      animation: twinkle var(--duration) ease-in-out infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.15; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.4); }
+    }
+
+    .content { position: relative; z-index: 1; padding: 24px; }
+
+    .code {
+      font-size: clamp(5rem, 20vw, 11rem);
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, #6c63ff, #ff6b6b, #a855f7, #6c63ff);
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 6s ease-in-out infinite;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .drifting {
+      display: inline-block;
+      font-size: clamp(2.4rem, 8vw, 4rem);
+      animation: drift 5s ease-in-out infinite;
+    }
+
+    @keyframes drift {
+      0%, 100% { transform: translateY(0) rotate(-4deg); }
+      50% { transform: translateY(-16px) rotate(6deg); }
+    }
+
+    h1 { font-size: clamp(1.2rem, 3.5vw, 1.7rem); margin: 18px 0 10px; }
+
+    p {
+      color: #8888a0;
+      max-width: 440px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 34px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #6c63ff, #ff6b6b);
+      box-shadow: 0 4px 20px rgba(108, 99, 255, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 8px 30px rgba(108, 99, 255, 0.45);
+    }
+
+    .btn:active { transform: translateY(0) scale(0.97); }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="code">4<span class="drifting">🛸</span>4</div>
+    <h1>Lost in space</h1>
+    <p>The page you're looking for drifted out of orbit. Let's get you back to base.</p>
+    <a href="/" class="btn">🚀 Back to the portfolio</a>
+  </div>
+
+  <script>
+    (function () {
+      for (var i = 0; i < 90; i++) {
+        var s = document.createElement('div');
+        s.className = 'star';
+        var size = Math.random() * 2.5 + 1;
+        s.style.width = s.style.height = size + 'px';
+        s.style.left = Math.random() * 100 + '%';
+        s.style.top = Math.random() * 100 + '%';
+        s.style.setProperty('--duration', (Math.random() * 3 + 2) + 's');
+        s.style.animationDelay = Math.random() * 5 + 's';
+        document.body.appendChild(s);
+      }
+      // Works both at site root and in subpath previews
+      document.querySelector('.btn').href =
+        location.href.replace(/[^/]*$/, '').replace(/\/[^/]*\/$/, '/') === location.origin + '/' ? '/' : '../index.html';
+    })();
+  </script>
+</body>
+</html>
