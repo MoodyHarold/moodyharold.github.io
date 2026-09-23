@@ -4,6 +4,5 @@ Thumbs.db
 desktop.ini
 
 # Local tooling
-serve.py
-server.log
 .freebuff/
+server.log
