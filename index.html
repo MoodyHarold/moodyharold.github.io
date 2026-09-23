@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moody Harold | Portfolio</title>
+  <meta name="description" content="Portfolio of Moody Harold — Computer Science graduate building innovative solutions through code and creativity.">
+  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">MH</a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Moody Harold</h1>
+      <h2 class="hero-title">Computer Science <span class="highlight">Graduate</span></h2>
+      <p class="hero-desc">Building innovative solutions through code and creativity.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      <div class="about-content reveal">
+        <div class="about-image">
+          <div class="image-placeholder" style="background: url('1777021619877.png') center center / cover no-repeat;">
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>A dedicated Computer Science Graduate</h3>
+          <p>I'm Moody Harold, a passionate Computer Science graduate with a strong drive for problem-solving and building impactful software. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+          <p>Having completed my degree, I'm constantly exploring new technologies, contributing to projects, and expanding my skillset in software development, algorithms, and system design.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="4">0</span>
+              <span class="stat-label">Years Building</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="12">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="9">0</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+      <p class="skills-hint">Click a planet to see its skill level · poke the sun 3&times; 👀</p>
+      <div class="solar-system" id="solarSystem">
+        <div class="sun">
+          <i class="fas fa-code"></i>
+          <span>Skills</span>
+        </div>
+
+        <div class="orbit-ring" style="--r:80px"></div>
+        <div class="orbit-ring" style="--r:110px"></div>
+        <div class="orbit-ring" style="--r:140px"></div>
+        <div class="orbit-ring" style="--r:170px"></div>
+        <div class="orbit-ring" style="--r:200px"></div>
+        <div class="orbit-ring" style="--r:230px"></div>
+        <div class="orbit-ring" style="--r:260px"></div>
+        <div class="orbit-ring" style="--r:290px"></div>
+        <div class="orbit-ring" style="--r:320px"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="skill-popup-overlay" id="skillPopup">
+    <div class="skill-popup-card">
+      <button class="popup-close">&times;</button>
+      <div class="popup-icon-wrapper">
+        <i class="popup-icon" id="popupIcon"></i>
+      </div>
+      <h3 class="popup-title" id="popupTitle">Skill</h3>
+      <div class="popup-bar-container">
+        <div class="popup-bar-bg">
+          <div class="popup-bar-fill" id="popupBarFill"></div>
+        </div>
+        <span class="popup-level" id="popupLevel">0%</span>
+      </div>
+      <p class="popup-desc" id="popupDesc"></p>
+    </div>
+  </div>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card reveal" style="--d:0s">
+          <div class="project-image"><i class="fas fa-laptop-code"></i></div>
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>A modern, responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/MoodyHarold/my-portifolio-website" target="_blank" rel="noopener noreferrer" class="btn-small"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn-small ongoing-link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" style="--d:.12s">
+          <div class="project-image"><i class="fas fa-mountain"></i></div>
+          <div class="project-info">
+            <h3>Team Raha — Kilimanjaro Treks</h3>
+            <p>A database-driven website for a Kilimanjaro trekking operator, with a booking system, blog, SEO structured data, and a full admin dashboard.</p>
+            <div class="project-tags">
+              <span>PHP</span><span>MySQL</span><span>Tailwind CSS</span><span>SEO</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-small ongoing-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn-small ongoing-link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" style="--d:.24s">
+          <div class="project-image"><i class="fas fa-binoculars"></i></div>
+          <div class="project-info">
+            <h3>Tamega Safaris &amp; 4x4 Rentals</h3>
+            <p>A safari tour and 4x4 Land Cruiser rental platform for an Arusha-based operator, with MySQL-backed content, JSON fallback storage, and an admin panel.</p>
+            <div class="project-tags">
+              <span>PHP</span><span>MySQL</span><span>Tailwind CSS</span><span>Admin Panel</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-small ongoing-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn-small ongoing-link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Journey</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal" style="--d:0s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 - Present</span>
+            <h3>Freelancing &amp; Seeking Opportunities</h3>
+            <p>Building responsive websites and web applications for small businesses and personal projects — and actively pursuing full-time software engineering roles to apply my skills and contribute to innovative projects.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" style="--d:.15s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 - 2026</span>
+            <h3>Computer Science Degree</h3>
+            <p>Successfully completed a comprehensive degree in Computer Science, graduating in 2026 with a focus on software engineering, algorithms, and system design.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" style="--d:.3s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023</span>
+            <h3>Started Coding Journey</h3>
+            <p>Began learning programming fundamentals, data structures, and web development technologies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
+      <div class="contact-content reveal">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>moodharold@gmail.com</p>
+          </div>
+          <a class="contact-item contact-link" href="https://wa.me/255674499424" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            <p>+255 674 499 424</p>
+          </a>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Dar es Salaam, Tanzania</p>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/MoodyHarold" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link coming-soon" aria-label="LinkedIn (coming soon)"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link coming-soon" aria-label="Twitter (coming soon)"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link coming-soon" aria-label="Instagram (coming soon)"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" id="cfName" placeholder="Your Name" required>
+          <input type="email" id="cfEmail" placeholder="Your Email" required>
+          <textarea rows="5" id="cfMessage" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Moody Harold · Built with ☕, 💜 and 9 orbiting planets</p>
+  </footer>
+
+  <button class="rocket-top" id="rocketTop" aria-label="Back to top">🚀</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>

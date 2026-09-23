@@ -1,0 +1,9 @@
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Local tooling
+serve.py
+server.log
+.freebuff/
