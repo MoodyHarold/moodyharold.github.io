@@ -198,7 +198,7 @@ body {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('IMG-20260719-WA0000.jpg') center center / cover no-repeat;
+  background: url('images/hero-bg.jpg') center center / cover no-repeat;
   opacity: 0.25;
   z-index: 0;
   will-change: transform;
@@ -865,7 +865,7 @@ body {
 /* ---------- Projects ---------- */
 #projects {
   padding: 100px 0;
-  background: linear-gradient(135deg, rgba(18, 18, 26, 0.92), rgba(18, 18, 26, 0.85)), url('projects.jpg') center center / cover no-repeat;
+  background: linear-gradient(135deg, rgba(18, 18, 26, 0.92), rgba(18, 18, 26, 0.85)), url('images/projects-bg.jpg') center center / cover no-repeat;
 }
 
 .projects-grid {
